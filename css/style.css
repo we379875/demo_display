@@ -1,0 +1,20 @@
+.nav-item{
+    width: 33%;
+    text-align: center;
+}
+
+#main{
+    background: #333;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav{
+    background: #000;
+}
+
+.casinopic{
+    height: 180px;
+    display: inline-block;
+    line-height: 180px;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>版型展示站</title>
+
+    <!-- Bootstrap -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+        integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA=" crossorigin="anonymous" />
+
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div id="header" style="background: url('img/visual_bg.jpg'); height: 300px;">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                language
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="ind.html">Indonesia</a>
+                <a class="dropdown-item" href="index.html">繁體中文</a>
+                <a class="dropdown-item" href="cn.html">简体中文</a>
+                <a class="dropdown-item" href="en.html">English</a>
+                <a class="dropdown-item" href="vit.html">Việt Nam</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="main" data-lan="ind">
+        <div class="nav mb-3">
+            <div class="container">
+                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="platform-tab" data-toggle="pill" href="#platform" role="tab"
+                            aria-controls="pills-platform" aria-selected="true">版 型</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="app-tab" data-toggle="pill" href="#app" role="tab"
+                            aria-controls="pills-app" aria-selected="false">APP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="casino-tab" data-toggle="pill" href="#casino" role="tab"
+                            aria-controls="pills-casino" aria-selected="false">娱乐城列表</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="platform" role="tabpanel"
+                    aria-labelledby="pills-platform-tab">
+                    <div class="row demo"></div>
+                </div>
+
+                <div class="tab-pane fade" id="app" role="tabpanel" aria-labelledby="pills-app-tab">
+                    <div class="row app"></div>
+                </div>
+
+                <div class="tab-pane fade" id="casino" role="tabpanel" aria-labelledby="pills-casino-tab">
+                    <div class="row casino"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery Plugins -->
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"
+        integrity="sha256-Y1rRlwTzT5K5hhCBfAFWABD4cU13QGuRN6P5apfWzVs=" crossorigin="anonymous"></script>
+    <script type="module" src="js/main.js"></script>
+
+</body>
+
+</html>
